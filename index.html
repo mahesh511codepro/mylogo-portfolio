@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Logo Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #1f2a64, #4c69c7, #1f2a64, #4c69c7);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position:0% 50%;}
+      50% {background-position:100% 50%;}
+      100% {background-position:0% 50%;}
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 30px 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #ffd700;
+      margin-top: 10px;
+      opacity: 0;
+      animation: fadeInUp 2s forwards;
+    }
+
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInCard 0.8s forwards;
+      animation-delay: var(--delay);
+    }
+
+    @keyframes fadeInCard {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    .logo-card:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+      background: rgba(255,255,255,0.15);
+    }
+
+    .logo-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      border: 2px solid rgba(255,255,255,0.3);
+      transition: border 0.3s;
+    }
+
+    .logo-card img:hover {
+      border: 2px solid #ffd700;
+    }
+
+    .logo-card a {
+      display: inline-block;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 10px;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .logo-card a:hover {
+      color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .portfolio {
+        padding: 20px;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Logo Portfolio</h1>
+  <div class="tagline">Creative Logo Designer | 15+ Professional Logos</div>
+</header>
+
+<section class="portfolio">
+  <!-- 15 Logo Cards -->
+  <div class="logo-card" style="--delay: 0s">
+    <img src=" https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/BLACK%20AND%20BLACK%20Professional%20IT%20Solutions%20%26%20Tech%20Services%20LOGO%20_20251124_195102_0000.png " alt="Logo 1">
+    <a href="https://www.canva.com/design/DAG4wygaA1c/eKK-gti4kNMRE7isLJDGxw/view?utm_content=DAG4wygaA1c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h433200ad8b" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.1s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/BLACK%20AND%20GRAY%20%20MODERN%20%20CODING%20LOGO%20_20251124_194905_0000.png  " alt="Logo 2">
+    <a href="https://www.canva.com/design/DAG4eJ1uk0c/Cxtx32HdJvk4Iu-J-tw7Fw/watch?utm_content=DAG4eJ1uk0c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h17247481ee" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.2s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/BLACK%20AND%20WHITE%20GRADIENT%20DARK%20MODERN%20ENGINEERING%20LOGO%20_20251124_194312_0000.png  " alt="Logo 3">
+    <a href="https://www.canva.com/design/DAG5aI1gI2E/md2kQeF-HnSPbIaXKbgLiA/view?utm_content=DAG5aI1gI2E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha77166af7f" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.3s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/BLACK%20CIRCLE%20WITH%20BLACK%20MIX%20MODERN%20CRAFTED%20TECH%20SOLUTIOLN%20LOGO%20_20251124_194151_0000.png" alt="Logo 4">
+    <a href="https://www.canva.com/design/DAG4yIHJ0cA/EH51BZtnvYD6qD4jYLM_cw/view?utm_content=DAG4yIHJ0cA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h628d1e1646" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.4s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/BLUE%20AND%20BLACK%20MIX%20MODERN%20Secure%20Digital%20Infrastructure%20LOGO%20_20251124_195011_0000.png" alt="Logo 5">
+    <a href="https://www.canva.com/design/DAG4rnsfpZM/beQPJ_BjyrWbcOp27FKPIQ/view?utm_content=DAG4rnsfpZM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6df8b12229" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.5s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/Black%20modern%20Infinite%20Web%20Solutions%20logo%20_20251124_195048_0000.png" alt="Logo 6">
+    <a href="https://www.canva.com/design/DAG439wHMLI/pYLeBi-EexrD2RxbE3LB3Q/view?utm_content=DAG439wHMLI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbdb90dec94" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.6s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/Colorful%20pixel%20%20modern%20tech%20solutions%20logo%20_20251124_194215_0000.png" alt="Logo 7">
+    <a href="https://www.canva.com/design/DAG4ksn6hiI/QCEvP9tw5_SUxLIXfy6NVA/view?utm_content=DAG4ksn6hiI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4f50a633cb" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.7s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/GOLDEN%20YELLOW%20AND%20BLACK%20WHITE%20MIX%20MODERN%20TECH%20SOLUTIOLN%20LOGO%20_20251124_195032_0000.png" alt="Logo 8">
+    <a href="https://www.canva.com/design/DAG5VK3ARHQ/ThXWVlXabhRAuGNGvF7uWA/view?utm_content=DAG5VK3ARHQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha89e9f78bf" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.8s">
+    <img src=" https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/GREEN%20AND%20BLACK%20MODERN%20TECH%20SOLUTIOLN%203D%20LOGO%20_20251124_194943_0000.png" alt="Logo 9">
+    <a href="https://www.canva.com/design/DAG4GDBBTVE/yCAQ7rRaGjv3ustSZq3Isg/watch?utm_content=DAG4GDBBTVE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2df33e6a54" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 0.9s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/LIGHT%20BLUE%20AND%20BLACK%20MODERN%20CLOUD%20SOLUTION%20LOGO%20_20251124_194738_0000.png" alt="Logo 10">
+    <a href="https://www.canva.com/design/DAG4kqqh1dM/ECghupMvlIPWUFeuWDV4vw/watch?utm_content=DAG4kqqh1dM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hf4cf5aeb96" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 1s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/WHITE%203D%20MODERN%20DIGITAL%20LOGO%20_20251124_194840_0000.png" alt="Logo 11">
+    <a href="https://www.canva.com/design/DAG5bXXxECE/rwqoS1fvBwc_L4LxE8tpWg/view?utm_content=DAG5bXXxECE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4c174a5fe2" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 1.1s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/WHITE%20AND%20BLACK%20MODERN%20ICT%20SOLUTION%20LOGO%20_20251124_194923_0000.png" alt="Logo 12">
+    <a href="https://www.canva.com/design/DAG4eu_FU68/0vLy20zPDSx59Er70neExw/watch?utm_content=DAG4eu_FU68&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3b9a444ce7" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 1.2s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/WHITE%20AND%20BLACK%20MODERN%20SOFT%20SOLUTION%20LOGO%20_20251124_194254_0002.png" alt="Logo 13">
+    <a href="https://www.canva.com/design/DAG410TDwSU/SaKgli7a85hj6FRpGH-OBQ/view?utm_content=DAG410TDwSU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he7bdf9b438" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 1.3s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/WHITE%20AND%20LIGHT%20BLUE%20GRADIENT%20MODERN%20FUTURE%20DATA%20BYTE%20LOGO%20_20251124_194236_0000.png" alt="Logo 14">
+    <a href="https://www.canva.com/design/DAG5NnjEmac/AI45Q46gcFkAIEU8pCY4Fg/view?utm_content=DAG5NnjEmac&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h312cb76a6e" target="_blank">View on Canva</a>
+  </div>
+  <div class="logo-card" style="--delay: 1.4s">
+    <img src="https://raw.githubusercontent.com/mahesh511codepro/mylogo-portfolio/refs/heads/main/YELLOW%20AND%20WHITE%20GRADIENT%20MODERN%20DATA%20ANALYST%20LOGO%20_20251124_194824_0000.png" alt="Logo 15">
+    <a href="https://www.canva.com/design/DAG4k0yoNfo/I2uUeSBcUJq19f6DXryxrw/watch?utm_content=DAG4k0yoNfo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h18aa4dd718" target="_blank">View on Canva</a>
+  </div>
+</section>
+
+</body>
+</html>
