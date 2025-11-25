@@ -28,7 +28,7 @@ I specialize in:
 
 ## 🌐 Canva Creator Portfolio
 You can explore my live Canva template portfolio (logos, templates, and creative assets).  
-**Portfolio Link:** *(Add your Canva public profile link here)*
+**Portfolio Link:** *https://mahesh511codepro.github.io/mylogo-portfolio/)*
 
 ---
 
